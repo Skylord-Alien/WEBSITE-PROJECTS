@@ -1,1 +1,288 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF=8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>MS TECH WEBSITE</title>
+		<style>
+		/* General Styling */
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
 
+		/* Top Bar */
+		.top-bar {
+			background-color: #1E3A8A;
+			color: #FFFFFF; 
+			font-size: 0.875rem; 
+			padding: 0.5rem 1rem; 
+			display: flex; 
+			justify-content: space-between; 
+			align-items: center;
+		}
+
+		.top-bar a {
+			color: #FFFFFF; 
+			text-decoration: none; 
+			margin-left: 0.75rem; 
+		}
+
+		/* Header */
+		header {
+			background-color: #FFFFFF; 
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+		}
+
+		header .container {
+			display: flex; 
+			 
+			align-items: center; 
+			padding: 1rem;
+		}
+
+		/* Logo and Text */
+		header .logo {
+			margin-right: 1px; 
+		}
+
+		header .logo-text {
+			display: flex;
+			flex-direction: column;
+			margin-left: 0;
+		}
+
+		/* Styling the text */
+		.logo-text .soft {
+			color: #1E3A8A; 
+		}
+
+		.logo-text .technologies {
+			color: lightblue;
+		}
+
+		/* Navbar */
+		header nav {
+			display: flex;
+			align-items: center;
+			margin-left:10rem;
+		}
+
+		header nav a {
+			font-weight: 600;
+			color: #4B5563; 
+			text-decoration: none;
+			margin-right: 1.5rem;
+			transition: color 0.3s ease; 
+		}
+
+		header nav a:hover {
+			color: #1E3A8A; 
+		}
+
+		/* Dropdown Menu */
+		nav .dropdown {
+			position: relative;
+		}
+
+		.dropdown-content {
+			display: none; 
+			position: absolute; 
+			background-color: #FFFFFF; 
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+			padding: 0.5rem 0;
+			white-space: nowrap;
+			opacity:90%;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block; 
+		}
+
+		.dropdown-content a {
+			display: block;
+			padding: 0.5rem 1rem; 
+			color: #4B5563;
+			text-decoration: none;
+		}
+
+		.dropdown-content a:hover {
+			background-color: #F3F4F6; 
+		}
+
+		/* Feature Cards */
+		.features {
+			display: flex; 
+			justify-content: center;
+			gap:20px;
+			white-space:nowrap;
+			
+			padding: 2rem 0;
+		}
+
+		.features .feature-card {
+			background-color: white; 
+			text-align: center; 
+			padding: 1.5rem; 
+			border-radius: 0.5rem; 
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+			width: 12rem;
+			justify-content:left;
+			
+		}
+		
+		/* Services Section */
+		.services {
+			padding: 2rem;
+		}
+
+		.services h2 {
+			font-size: 2rem;
+			font-weight: bold;
+			color: #1E3A8A;
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+
+		.services .container {
+			display: flex;
+			justify-content: center;
+			gap: 1.5rem;
+		}
+
+		.services .service-card {
+			width: 20rem;
+			text-align: center;
+		}
+
+		.services .service-card img {
+			width: 100%;
+			border-radius: 0.5rem;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+		}
+
+		.services .service-card h3 {
+			font-weight: bold;
+			color: #1E3A8A;
+			margin-top: 1rem;
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="top-bar">
+		<span>CALL : 7995920133</span>
+		<div>
+			<a href="#">Facebook</a>
+			<a href="#">Twitter</a>
+			<a href="#">YouTube</a>
+			<a href="#">Instagram</a>
+			<a href="#">Pinterest</a>
+		</div>
+		</div>
+
+		<header>
+		<div class="container">
+			<div class="logo">
+				<img src="https://mssofttechnologies.com/wp-content/uploads/2022/12/cropped-logo-1-4.png" alt="Logo">
+			</div>
+			
+			<nav>
+				<a href="home.html">HOME</a>
+				<a href="services.html">SERVICES</a>
+				<div class="dropdown">
+					<a href="#">CODING</a>
+					<div class="dropdown-content">
+						<a href="#">C C++</a>
+						<a href="#">Java</a>
+						<a href="D:\Project-Progress\MS TECH WEB DEV\python.html">Python</a>
+						<a href="#">Full Stack Development</a>
+						<a href="#">Data Science</a>
+						<a href="#">Oracle DBA</a>
+						<a href="#">Machine Learning</a>
+						<a href="#">Sales Force</a>
+						<a href="#">Testing tools</a>
+						<a href="#">SQL</a>
+						<a href="#">PHP</a>
+						<a href="#">Data Science</a>
+						<a href="#">Cyber Security</a>
+						
+					</div>
+				</div>
+					 <!-- Non-Coding Dropdown -->
+					<div class="dropdown">
+						<a href="#">NON-CODING</a>
+					<div class="dropdown-content">
+						<a href="#">Informatic</a>
+						<a href="#">Big Data</a>
+						<a href="#">Testing Tools</a>
+						<a href="#">Handoop</a>
+						<a href="#">Snow Flake</a>
+						<a href="#">AWS DevOps</a>
+						<a href="#">Tableau</a>
+						<a href="#">Power BI</a>
+						<a href="#">MSBI</a>
+					</div>
+					</div>
+					 <!-- TECHNICAL COURSES Dropdown -->
+					<div class="dropdown">
+						<a href="#">TECHNICAL COURSES</a>
+					<div class="dropdown-content">
+						<a href="#">Photo Shop</a>
+						<a href="#">Digital Marketing</a>
+						<a href="#">Video Editing</a>
+						<a href="#">Adobe illustrator</a>
+						<a href="#">Web Designing</a>
+						<a href="#">WordPress</a>
+						<a href="#">Ms Office, DCA, PGDCA</a>
+					</div>
+					</div>
+				
+				<a href="#">CONTACT US</a>
+			</nav>
+		</div>
+		</header>
+
+		<section class="features">
+		<div class="feature-card">
+			<img src="C:\Users\AMMULU-PANIKARA\Downloads\Screenshot_21-11-2024_0516_mssofttechnologies.com.jpeg" alt="100+ courses">
+			<h3>100+ Courses</h3>
+			<p>Online & Offline Courses</p>
+		</div>
+		<div class="feature-card">
+			<img src="C:\Users\AMMULU-PANIKARA\Downloads\Screenshot_21-11-2024_05154_mssofttechnologies.com.jpeg" alt="experts">
+			<h3>Experts</h3>
+			<p>Real Time Faculty</p>
+		</div>
+		<div class="feature-card">
+			<img src="C:\Users\AMMULU-PANIKARA\Downloads\Screenshot_21-11-2024_05210_mssofttechnologies.com.jpeg" alt="learn">
+			<h3>Learn</h3>
+			<p>From Anywhere</p>
+		</div>
+		<div class="feature-card">
+			<img src="C:\Users\AMMULU-PANIKARA\Downloads\Screenshot_21-11-2024_05225_mssofttechnologies.com.jpeg" alt="Software Training">
+			<h3>Unlimited</h3>
+			<p>Course Access</p>
+		</div>
+		</section>
+
+		<section class="services">
+		<h2>Our Services</h2>
+		<div class="container">
+			<div class="service-card">
+				<img src="https://mssofttechnologies.com/wp-content/uploads/2022/12/software-training.jpg" alt="Software Training">
+				<h3>SOFTWARE TRAINING</h3>
+			</div>
+			<div class="service-card">
+				<img src="https://mssofttechnologies.com/wp-content/uploads/2022/12/projects.jpg" alt="Projects">
+				<h3>PROJECTS</h3>
+			</div>
+			<div class="service-card">
+				<img src="https://mssofttechnologies.com/wp-content/uploads/2022/12/web-development.jpg" alt="Web Development">
+				<h3>DEVELOPMENT</h3>
+			</div>
+		</div>
+		</section>
+	</body>
+	</html>
